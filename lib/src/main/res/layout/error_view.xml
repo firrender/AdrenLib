@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/error_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/error_retry_view"
+        android:layout_above="@+id/status_hint_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_status_error"
+        android:layout_width="@dimen/s_160"
+        android:layout_height="@dimen/s_160"/>
+
+    <TextView
+        style="@style/MultipleStatusView.Content"
+        android:id="@+id/status_hint_content"
+        android:textSize="@dimen/ts_24"
+        android:text="@string/error_view_hint"/>
+
+</RelativeLayout>
